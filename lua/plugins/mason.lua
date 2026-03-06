@@ -1,7 +1,9 @@
 -- Extra tools beyond what language extras install
 return {
   {
-    "mason-org/mason.nvim",
+    "WhoIsSethDaniel/mason-tool-installer.nvim",
+    dependencies = { "mason-org/mason.nvim" },
+    cmd = { "MasonToolsInstall", "MasonToolsUpdate", "MasonToolsClean" },
     opts = {
       ensure_installed = {
         -- LSP servers
