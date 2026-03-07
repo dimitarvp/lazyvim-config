@@ -12,8 +12,6 @@ return {
         "gitignore",
         "just",
         "make",
-        "ocaml",
-        "ocaml_interface",
         "php",
         "pkl",
         "proto",
