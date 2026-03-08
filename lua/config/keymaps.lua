@@ -6,6 +6,9 @@ local map = vim.keymap.set
 -- Save
 map({ "n", "i", "v" }, "<C-s>", "<cmd>w<cr><esc>", { desc = "Save file" })
 
+-- Force close buffer (no questions asked)
+map("n", "<leader>bx", "<cmd>bdelete!<cr>", { desc = "Force close buffer" })
+
 -- Splits
 map("n", "|", "<cmd>vsplit<cr>", { desc = "Vertical split" })
 map("n", "\\", "<cmd>split<cr>", { desc = "Horizontal split" })
