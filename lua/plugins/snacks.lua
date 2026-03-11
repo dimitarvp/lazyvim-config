@@ -42,6 +42,7 @@ return {
             keys = {
               ["<PageUp>"] = { "list_scroll_up", mode = { "i", "n" } },
               ["<PageDown>"] = { "list_scroll_down", mode = { "i", "n" } },
+              ["<C-d>"] = { "bufdelete", mode = { "i", "n" } },
             },
           },
         },
