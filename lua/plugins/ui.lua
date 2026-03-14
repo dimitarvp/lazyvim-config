@@ -17,8 +17,8 @@ return {
       -- Add ◆ separator between progress and location
       opts.sections.lualine_y = {
         { "progress", separator = "", padding = { left = 1, right = 0 } },
-        { function() return " ●" end, padding = 0, separator = "" },
-        "location",
+        { function() return "●" end, padding = { left = 1, right = 0 }, separator = "" },
+        { "location", padding = { left = 0, right = 1 } },
       }
 
       -- Replace clock with active LSP server name
