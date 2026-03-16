@@ -18,7 +18,7 @@ return {
       opts.sections.lualine_y = {
         { "progress", separator = "", padding = { left = 1, right = 0 } },
         { function() return "●" end, padding = { left = 1, right = 0 }, separator = "" },
-        { "location", padding = { left = 0, right = 1 } },
+        { function() return vim.fn.line(".") .. ":" .. vim.fn.col(".") end, padding = { left = 1, right = 1 }, separator = "" },
       }
 
       -- Replace clock with active LSP server name
