@@ -35,6 +35,9 @@ require("lazy").setup({
     { import = "lazyvim.plugins.extras.lang.typescript" },
     { import = "lazyvim.plugins.extras.lang.yaml" },
 
+    -- Coding extras
+    { import = "lazyvim.plugins.extras.coding.mini-surround" },
+
     -- Editor extras
     { import = "lazyvim.plugins.extras.editor.inc-rename" },
 

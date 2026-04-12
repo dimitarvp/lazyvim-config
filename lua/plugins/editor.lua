@@ -48,10 +48,4 @@ return {
     },
   },
 
-  -- Surround text objects
-  {
-    "kylechui/nvim-surround",
-    event = "VeryLazy",
-    config = true,
-  },
 }

@@ -9,6 +9,14 @@ map({ "n", "i", "v" }, "<C-s>", "<cmd>w<cr><esc>", { desc = "Save file" })
 -- Force close buffer (no questions asked)
 map("n", "<leader>bx", "<cmd>bdelete!<cr>", { desc = "Force close buffer" })
 
+-- Surround inner word (Ctrl-b then type the surround character)
+map("n", "<C-b>", function()
+  local char = vim.fn.getcharstr()
+  if char and char ~= "" then
+    vim.cmd("normal gsaiw" .. char)
+  end
+end, { desc = "Surround word" })
+
 -- Splits
 map("n", "|", "<cmd>vsplit<cr>", { desc = "Vertical split" })
 map("n", "\\", "<cmd>split<cr>", { desc = "Horizontal split" })
