@@ -24,7 +24,6 @@ return {
         php = { "php", "phpcs", "phpinsights", "phpmd", "phpstan", "psalm" },
         proto = { "buf_lint" },
         python = { "bandit", "flake8", "mypy", "pycodestyle", "pydocstyle", "pylint", "ruff", "vulture" },
-        ruby = { "ruby", "rubocop", "standardrb" },
         shell = { "shellcheck" },
         sql = { "sqlfluff" },
         typescript = { "biomejs" },
