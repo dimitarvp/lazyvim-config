@@ -24,7 +24,6 @@ return {
         "htmlhint",
         "nilaway",
         "prettier",
-        "rubocop",
         "ruff",
         "shellcheck",
         "shellharden",
