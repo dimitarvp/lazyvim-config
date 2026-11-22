@@ -9,11 +9,12 @@ vim.o.autoread = true
 vim.o.confirm = false
 vim.g.snacks_animate = false
 
--- No plugin here needs the remote-plugin providers; the interpreters they
--- would probe (pynvim, ruby, perl) are not installed on purpose
+-- No plugin here needs the remote-plugin providers; the helpers they would
+-- probe (pynvim, ruby, perl, the neovim npm package) are not installed on purpose
 vim.g.loaded_python3_provider = 0
 vim.g.loaded_ruby_provider = 0
 vim.g.loaded_perl_provider = 0
+vim.g.loaded_node_provider = 0
 
 -- Clipboard over SSH: yanks reach the local machine's clipboard through OSC 52
 -- (the terminal escape that sets the clipboard of the terminal we sit at), as
